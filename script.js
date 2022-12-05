@@ -18,7 +18,7 @@ window.addEventListener("load", function() {
     let planetMoons = listedPlanets[numPlanet].moons;
     let planetImage = listedPlanets[numPlanet].image;
     addDestinationInfo(document, planetName, planetDiameter, planetStar, planetDistance, planetMoons, planetImage);
-    })
+    });
 
     submitButton.addEventListener('click', function() {
         event.preventDefault();
