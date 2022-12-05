@@ -1,7 +1,8 @@
 // Write your JavaScript code here!
 
 window.addEventListener("load", function() {
-    const submitButton = document.getElementById('formSubmit');
+   const submitButton = document.getElementById('formSubmit');
+   document.getElementById("faultyItems").style.visibility = "hidden";
    let listedPlanets = [];
 // Set listedPlanetsResponse equal to the value returned by calling myFetch()
    let listedPlanetsResponse = myFetch();
