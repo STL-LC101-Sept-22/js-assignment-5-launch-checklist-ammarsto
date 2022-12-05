@@ -40,6 +40,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
    if (validateInput(pilot)==="Empty"||validateInput(copilot)==="Empty") {
     alert("All fields are required!");
    } else if (validateInput(pilot) === "Is a Number" || validateInput(copilot) === "Is a Number" || validateInput(fuelLevel) === "Not a Number" || validateInput(cargoLevel) === "Not a Number") {
+    document.getElementById("faultyItems").style.visibility = "hidden";
     alert("Make sure to enter valid information for each field!");
    } else {
     document.getElementById("faultyItems").style.visibility = "visible";
