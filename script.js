@@ -11,13 +11,13 @@ window.addEventListener("load", function() {
    }).then(function () {
        console.log(listedPlanets);
 // Below this comment call the appropriate helper functions to pick a planet fom the list of planets and add that information to your destination.
-    let numPlanet = pickPlanet(listedPlanets);
-    let planetName = listedPlanets[numPlanet].name;
-    let planetDiameter = listedPlanets[numPlanet].diameter;
-    let planetStar = listedPlanets[numPlanet].star;
-    let planetDistance = listedPlanets[numPlanet].distance;
-    let planetMoons = listedPlanets[numPlanet].moons;
-    let planetImage = listedPlanets[numPlanet].image;
+    let pickedPlanet = pickPlanet(listedPlanets);
+    let planetName = pickedPlanet.name;
+    let planetDiameter = pickedPlanet.diameter;
+    let planetStar = pickedPlanet.star;
+    let planetDistance = pickedPlanet.distance;
+    let planetMoons = pickedPlanet.moons;
+    let planetImage = pickedPlanet.image;
     addDestinationInfo(document, planetName, planetDiameter, planetStar, planetDistance, planetMoons, planetImage);
     });
 
