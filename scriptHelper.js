@@ -14,9 +14,7 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
                 </ol>
                 <img src="">
    */
-    // let planetNum = pickPlanet(myFetch());
-    // let planet = myFetch()[planetNum];
-    document.getElementById("missionTarget").innerHTML += `<h2>Mission Destination</h2>
+    document.getElementById("missionTarget").innerHTML = `<h2>Mission Destination</h2>
     <ol>
         <li>Name: ${name}</li>
         <li>Diameter: ${diameter}</li>
@@ -50,7 +48,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
    }
    if (fuelLevel < 10000 || cargoLevel > 10000) {
     document.getElementById("launchStatus").style.color = "rgb(199, 37, 78)";
-    document.getElementById("launchStatus").innerHTML = "Shuttle Not Ready for launch";
+    document.getElementById("launchStatus").innerHTML = "Shuttle Not Ready for Launch";
    } else {
     document.getElementById("launchStatus").style.color = "rgb(65, 159, 106)";
     document.getElementById("launchStatus").innerHTML = "Shuttle is Ready for Launch";
